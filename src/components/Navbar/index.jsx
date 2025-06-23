@@ -2,28 +2,28 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md px-6 py-3 flex items-center justify-between">
-      {/* Logo ou título */}
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900 shadow-md px-6 py-3 flex items-center justify-between">
+      {/* Links de navegação */}
       <div className="flex items-center gap-6">
         <Link
           to="/"
-          className="text-gray-800 text-xl font-semibold hover:text-blue-600 transition-colors duration-300"
+          className="text-gray-100 text-lg font-semibold hover:text-blue-400 transition-colors duration-300"
         >
           Home
         </Link>
 
         <Link
           to="/favoritos"
-          className="text-gray-800 text-xl font-semibold hover:text-blue-600 transition-colors duration-300"
+          className="text-gray-100 text-lg font-semibold hover:text-blue-400 transition-colors duration-300"
         >
           Favoritos
         </Link>
       </div>
 
-      {/* Botão hamburguer para mobile (pode remover se quiser) */}
+      {/* Ícone de menu (opcional) */}
       <div className="md:hidden">
         <button
-          className="text-gray-800 focus:outline-none hover:text-blue-600 transition-colors duration-300"
+          className="text-gray-100 hover:text-blue-400 focus:outline-none transition-colors duration-300"
           aria-label="Menu"
         >
           <svg

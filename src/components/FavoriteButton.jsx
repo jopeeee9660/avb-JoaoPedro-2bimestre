@@ -15,7 +15,7 @@ const FavoriteButton = ({ item }) => {
       }}
       aria-label="Favoritar"
     >
-      {favorite ? '❤️' : '🤍'}
+      {favorite ? '⭐' : '☆'}
     </button>
   );
 };
